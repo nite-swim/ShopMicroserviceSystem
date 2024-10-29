@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        # Nacos Config 服务地址
+#        server-addr: 192.168.3.49:8848
+        # 配置分组
+        group: DEFAULT_GROUP
+        # 配置命名空间
+#        namespace: public 不能开这个配置，会无线刷控制台
+        # Data ID
+        prefix: shop-product
+        # 配置文件扩展名
+        file-extension: yaml
+        refresh-enabled: true
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+

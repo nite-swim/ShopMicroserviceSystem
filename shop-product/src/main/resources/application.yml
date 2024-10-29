@@ -1,0 +1,13 @@
+server:
+  port: 8072
+spring:
+  application:
+    name: service-product
+  zipkin:
+    base-url: http://127.0.0.1:9411/ #zipkin的 请求地址
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
+
+

@@ -1,0 +1,11 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: api-gateway
+  zipkin:
+    base-url: http://127.0.0.1:9411/ #zipkin的 请求地址
+    discovery-client-enabled: false
+  sleuth:
+    sampler:
+      probability: 1.0 #采样百分比
